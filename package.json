@@ -26,5 +26,23 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "vite": "^6.1.0"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "core-js",
+      "core-js-pure",
+      "ejs",
+      "es5-ext",
+      "esbuild",
+      "node-sass"
+    ],
+    "onlyBuiltDependencies": [
+      "core-js",
+      "core-js-pure",
+      "ejs",
+      "es5-ext",
+      "esbuild",
+      "node-sass"
+    ]
   }
 }
