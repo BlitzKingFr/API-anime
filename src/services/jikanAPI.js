@@ -1,12 +1,15 @@
-const url = "https://api.jikan.moe/v4";
+const BASE_URL = "https://api.jikan.moe/v4";
 
-export async function fetchAnimeByName(name) {
-  try {
-    const response = await fetch(`${url}/anime?q=${encodeURI(name)}`);
-    const data = await response.json();
-    return data.data;
-  } catch (error) {
-    console.log(error);
-    return[];
-  }
+
+export async function fetchAnimeByName(query) {
+  const response = await fetch(`${BASE_URL}/anime?q=${query}`);
+  const data = await response.json();
+  return data.data; 
+}
+
+
+export async function fetchAnimeById(id) {
+  const response = await fetch(`${BASE_URL}/anime/${id}`);
+  const data = await response.json();
+  return data.data; 
 }
