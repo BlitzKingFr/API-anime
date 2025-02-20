@@ -1,1 +1,10 @@
-//need to work on this shi
+
+const AnimeDetails = () => {
+  return (
+    <div className="AnimeCard">
+
+    </div>
+  )
+}
+
+export default AnimeDetails
