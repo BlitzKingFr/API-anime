@@ -1,8 +1,44 @@
-# React + Vite
+# AnimeList
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AnimeList is a web application that allows users to browse and search for anime information using the Jikan API. The app is built with React and fetches data from MyAnimeList.
 
-Currently, two official plugins are available:
+## Features
+- Search for anime by name
+- View detailed anime information (synopsis, rating, genres, etc.)
+- Responsive design for mobile and desktop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: React, Vite
+- **API**: Jikan API
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/animelist.git
+   cd animelist
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open the application in your browser:
+   ```
+   http://localhost:5173
+   ```
+
+## Usage
+- Enter an anime title in the search bar to find details about it.
+- Click on an anime card to view more information.
+
+## API Usage
+This project uses the [Jikan API](https://jikan.moe/) to fetch anime data from MyAnimeList.
+
+
