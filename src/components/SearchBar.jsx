@@ -10,7 +10,7 @@ const SearchBar = ({onSearch}) => {
         }
     };
   return (
-    <>
+    <div className='search-input'>
         <input 
             type="text" 
             placeholder='Search anime'
@@ -18,7 +18,7 @@ const SearchBar = ({onSearch}) => {
             onChange={(e) => setQuery(e.target.value) } 
         />
         <button onClick={handleSearch}>Search</button>
-    </>
+    </div>
   )
 }
 

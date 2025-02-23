@@ -16,11 +16,11 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className='search'>
       <SearchBar onSearch={handleSearch} />
       {loading && <WifiLoaderComponent />}
       <AnimeList animes={animeList} loading={loading} />
-    </>
+    </div>
   );
 };
 
