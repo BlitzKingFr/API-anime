@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { fetchAnimeById } from "../services/jikanAPI";
 
 function AnimeDetails() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [anime, setAnime] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -25,13 +26,17 @@ function AnimeDetails() {
   if (loading) return <p className="loading-text">Loading anime details...</p>;
 
   if (!anime) return <p className="error-text">Anime details not found.</p>;
+
   return (
     <div className="anime-details">
-      <h1>{anime.title}</h1>
+      <button onClick={() => navigate(-1)} className="back-button">⬅</button>
       <img src={anime.images?.jpg?.image_url} alt={anime.title} />
-      <p><strong>Episodes:</strong> {anime.episodes || "Unknown"}</p>
-      <p><strong>Score:</strong> {anime.score || "N/A"}</p>
-      <p><strong>Synopsis:</strong> {anime.synopsis || "No synopsis available."}</p>
+      <div className="details-text">
+        <h1>{anime.title}</h1>
+        <p><strong>Episodes:</strong> {anime.episodes || "Unknown"}</p>
+        <p><strong>Score:</strong> {anime.score || "N/A"}</p>
+        <p><strong>Synopsis:</strong> {anime.synopsis || "No synopsis available."}</p>
+      </div>
     </div>
   );
 }

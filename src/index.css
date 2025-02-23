@@ -1,55 +1,93 @@
 body {
-    background-image: url('./images/bg1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
-    min-height: 100vh; 
-    font-family: "Inter";
-    color: antiquewhite;
+  background-image: url("./images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter";
+  color: antiquewhite;
 }
 
 .search {
-    text-align: center;
+  text-align: center;
 }
 
-.search-input input{
-    padding:10px;
-    width: 300px;
-    font-size: 16px;
-    border-radius: 20px;
-    font-family: 'Inter';
+.search-input input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 20px;
+  font-family: "Inter";
 }
-.search-input button{
-    padding: 10px;
+
+.search-input button {
+  padding: 10px;
+  font-size: 16px;
+  border: 7px;
+  border-radius: 30px;
+  background-color: aquamarine;
+  font-family: "Inter";
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-input button:hover {
+  background-color: rgb(26, 240, 168);
+}
+
+.anime-result {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.anime-result a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.anime-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.anime-details img {
+  max-width: 300px;
+  height: auto;
+}
+
+.anime-details .details-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.anime-details p {
+  margin: 0;
+}
+
+.back-button {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    padding: 10px 20px;
     font-size: 16px;
-    border: 7px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: aquamarine;
     font-family: 'Inter';
     cursor: pointer;
     transition: .3s ease;
 }
-.search-input button:hover{
-    background-color: rgb(26, 240, 168);
-}
 
-.anime-result {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    
-    
-}
-.anime-result a{
-    text-decoration: none;
-    color: antiquewhite;
+.back-button:hover {
+  background-color: rgb(26, 240, 168);
 }
