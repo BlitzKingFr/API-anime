@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { fetchAnimeByName } from '../services/jikanAPI';
 import SearchBar from '../components/SearchBar';
 import AnimeList from '../components/AnimeList';
-import { WifiLoaderComponent } from '../WifiLoaderComponent';
 
 const Home = () => {
   const [animeList, setAnimeList] = useState([]);
@@ -18,7 +17,6 @@ const Home = () => {
   return (
     <div className='search'>
       <SearchBar onSearch={handleSearch} />
-      {loading && <WifiLoaderComponent />}
       <AnimeList animes={animeList} loading={loading} />
     </div>
   );

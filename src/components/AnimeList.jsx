@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import AnimeCard from './AnimeCard';
 
 const AnimeList = ({ animes, loading }) => {
