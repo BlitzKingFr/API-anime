@@ -91,3 +91,26 @@ body {
 .back-button:hover {
   background-color: rgb(26, 240, 168);
 }
+
+@media (max-width: 768px) {
+  .anime-details {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .anime-details img {
+      max-width: 100%; 
+  }
+
+  .anime-details .details-text {
+      align-items: center; 
+      text-align: center; 
+  }
+}
+.search img {
+  
+  width: 300px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px;
+}
