@@ -38,6 +38,7 @@ function AnimeDetails() {
         <p><strong>Synopsis:</strong> {anime.synopsis || "No synopsis available."}</p>
       </div>
     </div>
+    //error
   );
 }
 
