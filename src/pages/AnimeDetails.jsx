@@ -29,7 +29,7 @@ function AnimeDetails() {
 
   return (
     <div className="anime-details">
-      <button onClick={() => navigate(-1)} className="back-button">⬅</button>
+      
       <img src={anime.images?.jpg?.image_url} alt={anime.title} />
       <div className="details-text">
         <h1>{anime.title}</h1>
